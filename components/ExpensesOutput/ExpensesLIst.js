@@ -1,8 +1,13 @@
 import { FlatList, Text, StyleSheet } from "react-native"
 import { GlobalStyles } from "../../contances/styles";
+import ExpenseItem from "../ExpenseItem";
+
+
 
 function renderExpenseItem(itemData) {
-    return <Text style={styles.description}>{itemData.item.description}</Text>
+    // return <Text style={styles.description}>{itemData.item.description}</Text>
+
+    return <ExpenseItem {...itemData.item} />
 }
 
 function ExpensesList({ expenses }) {

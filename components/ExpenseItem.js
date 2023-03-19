@@ -1,22 +1,62 @@
-import { Pressable, View, Text } from "react-native";
+import { Pressable, View, Text, StyleSheet } from "react-native";
+import { GlobalStyles } from "../contances/styles";
 
-function ExpenseItem() {
+function ExpenseItem({ description, amout, date }) {
     return (
         <Pressable>
-            <View>
-                <Text> </Text>
-            </View>
 
-            <View>
-                <Text> </Text>
-            </View>
+            <View style={styles.expenseItem}>
+                <View>
+                    <Text style={[styles.textBase, styles.decription]}>{description}</Text>
+                    <Text style={styles.textBase}>{date.toString()}</Text>
+                </View>
 
-            <View>
-                <Text> </Text>
+                <View  style={styles.amountContainer}>
+                    <Text style={styles.amount}>{amout}</Text>
+                </View>
+
             </View>
-                
         </Pressable>
     )
 }
 
 export default ExpenseItem;
+
+const styles = StyleSheet.create({
+    expenseItem: {
+        padding: 10,
+        marginVertical: 8,
+        backgroundColor: GlobalStyles.colors.primary500,
+        flexDirection: 'row',
+        borderRadius: 6,
+        elevation: 8,
+        shadowColor: GlobalStyles.colors.gray500,
+        shadowRadius: 4,
+        shadowOfsset: { width: 1, height: 1 },
+        shadowOpacity: 0.4,
+        justifyContent: 'space-between'
+    },
+    textBase: {
+        color: GlobalStyles.colors.primary50
+    },
+
+    decription: {
+        fontSize: 16,
+        marginBottom: 4,
+        fontWeight: 'bold',
+    },
+    amountContainer: {
+        paddingHorizontal: 12,
+        paddingVertical: 4,
+        backgroundColor: 'white',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 4,
+    },
+    amount: {
+        color: GlobalStyles.colors.primary500,
+        fontWeight: 'bold',
+    }
+
+
+})

@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     },
     sum: {
         fontSize: 16,
-        fontWeight: 'blod',
+        fontWeight: 'bold',
         color: GlobalStyles.colors.primary500,
     }
 
