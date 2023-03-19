@@ -5,11 +5,13 @@ import { GlobalStyles } from "../../contances/styles";
 import { getFormattedDate  } from "../../utils/date";
 
 
-function ExpenseItem({ description, amount, date }) {
+function ExpenseItem({id, description, amount, date }) {
     const navigation = useNavigation();
 
     function expensePressHandler() {
-        navigation.navigate('ManageExpense');
+        navigation.navigate('ManageExpense', {
+            expenseId: id
+        });
     }
     
     return (
