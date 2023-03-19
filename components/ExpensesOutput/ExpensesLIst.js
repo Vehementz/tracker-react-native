@@ -1,6 +1,6 @@
 import { FlatList, Text, StyleSheet } from "react-native"
 import { GlobalStyles } from "../../contances/styles";
-import ExpenseItem from "../ExpenseItem";
+import ExpenseItem from "./ExpenseItem";
 
 
 

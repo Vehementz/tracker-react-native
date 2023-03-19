@@ -10,47 +10,47 @@ const DUMMY_EXPENSES = [
         id: 'e1',
         description: 'A pair of shoes',
         amount: 59,
-        date: new Date('2021-12-01'),
+        date: new Date('2021-4-01'),
     },
 
     {
         id: 'e2',
         description: 'Fruits',
-        amount: 59.99,
-        date: new Date('2021-12-01'),
+        amount: 59,
+        date: new Date('2021-12-05'),
     },
 
     {
         id: 'e3',
-        description: 'Vidéos games',
-        amount: 59.99,
+        description: 'Drive',
+        amount: 59,
         date: new Date('2021-12-01'),
     }, 
 
         {
         id: 'e4',
-        description: 'Vidéos games',
+        description: 'Trip',
         amount: 59.99,
         date: new Date('2021-12-01'),
     }, 
     {
         id: 'e5',
         description: 'Vidéos games',
-        amount: 59.99,
-        date: new Date('2021-12-01'),
+        amount: 2344,
+        date: new Date('2022-07-08'),
     }, 
     {
         id: 'e6',
         description: 'Vidéos games',
-        amount: 59.99,
-        date: new Date('2021-12-01'),
+        amount: 559,
+        date: new Date('2021-12-04'),
     }, 
 
     {
         id: 'e7',
         description: 'A pair of shoes',
-        amount: 59.99,
-        date: new Date('2021-12-01'),
+        amount: 67,
+        date: new Date('2021-12-07'),
     },
 
 ]
@@ -70,6 +70,8 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         padding: 24,
+        paddingHorizontal: 24,
+        paddingBottom: 0,
         backgroundColor: GlobalStyles.colors.primary700,
         color: 'white'
 
